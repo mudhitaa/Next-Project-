@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import Blog3 from "@/public/blog3.jpg";
+import blog1 from "@/public/war.avif";
+import blog2 from "@/public/team.avif";
 
 type Post = {
   category: string;
@@ -19,8 +21,7 @@ const posts: Post[] = [
       "Understanding how light falls across a subject is the single most transformative skill a painter can develop. Here's how to study it.",
     date: "May 28, 2025",
     readTime: "5 min read",
-    image:
-      "https://images.unsplash.com/photo-1580136579312-94651dfd596d?auto=format&fit=crop&w=600&q=80",
+    image: blog1,
   },
   {
     category: "Community",
@@ -29,8 +30,7 @@ const posts: Post[] = [
       "Six remarkable painters joined our residency programme this summer. We sat down with each of them to talk process, inspiration, and what's next.",
     date: "May 15, 2025",
     readTime: "8 min read",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80",
+    image: blog2,
   },
   {
     category: "Exhibition",

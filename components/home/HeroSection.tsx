@@ -1,13 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
+import hero1 from "@/public/hero1.avif";
+import heromain from "@/public/heromain.avif";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-[92vh] bg-[#1b1714] flex items-center overflow-hidden">
-      {/* Background texture / decorative blobs */}
+     
+
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-150 h-150 rounded-full bg-amber-600/10 blur-[120px]" />
         <div className="absolute bottom-[-15%] left-[-5%] w-125 h-125 rounded-full bg-rose-900/10 blur-[100px]" />
-        {/* Decorative brush strokes */}
+        
+
         <svg className="absolute top-10 right-10 w-64 h-64 opacity-5" viewBox="0 0 200 200" fill="none">
           <path d="M20 180 Q80 20 160 80 Q200 110 180 160" stroke="#c9a84c" strokeWidth="8" strokeLinecap="round" fill="none" />
           <path d="M10 140 Q60 60 140 100" stroke="#c9a84c" strokeWidth="4" strokeLinecap="round" fill="none" />
@@ -68,19 +73,21 @@ export const HeroSection = () => {
           
           <div className="relative h-120 hidden lg:block">
             <div className="absolute top-8 right-16 w-64 h-80 rounded-2xl bg-stone-800/60 border border-stone-700/50 rotate-6 overflow-hidden">
-              <img
-                
-                src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?auto=format&fit=crop&w=400&q=80"
-                alt="Artwork"
-                className="w-full h-full object-cover opacity-80"
-              />
+              <Image
+              src={hero1}
+              alt="Arts"
+              fill
+              className="w-full h-full object-cover opacity-80"
+            />
             </div>
             <div className="absolute top-4 left-8 w-64 h-80 rounded-2xl  border border-stone-700/50 -rotate-3 overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=400&q=80"
-                alt="Artwork"
+              <Image
+                src={heromain}
+                alt="Main Hero Image"
+                fill
                 className="w-full h-full object-cover"
               />
+              
             </div>
 
             {/* label */}
