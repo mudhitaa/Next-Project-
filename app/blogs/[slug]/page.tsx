@@ -3,19 +3,7 @@ export default function BlogDetailPage() {
     <a href="/" className="text-blue-500 hover:underline">
       Back to Home
     </a>
-      <a href="/about-us" className="text-blue-500 hover:underline">
-        About Us
-        </a>
-      <a href="/our-services" className="text-blue-500 hover:underline">
-        Our Services
-      </a>
-      <a href="/gallery" className="text-blue-500 hover:underline">
-        Gallery
-      </a>
-      
-      <a href="/contact-us" className="text-blue-500 hover:underline">
-        Contact Us
-      </a>
+     
 
       <div>
         <ol>
